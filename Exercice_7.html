@@ -6,5 +6,21 @@
 </head>
 <body>
 
+  <form>
+    <label for="pointure">Quel est ta pointure ?</label>
+    <input type="text" id="pointure" name="pointure" value=""/>
+    <label for="naissance">Quel est ton année de naissance ?</label>
+    <input type="text" id="naissance" name="naissance" value=""/>
+    <button id="valider" name="valider" onclick="maFonction()">Valider</button>
+  </form>
+
+  <script type="text/javascript">
+    function maFonction(){
+      var point = document.getElementById("pointure").value;
+      var naiss = document.getElementById("naissance").value;
+      var resultat =  (((point*2+5)*50)-naiss)+1766;
+      alert(resultat);
+    }
+  </script>
 </body>
 </html>
