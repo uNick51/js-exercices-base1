@@ -5,6 +5,16 @@
     <meta charset="UTF-8">
 </head>
 <body>
+  <script type="text/javascript">
+function maFonction(){
+  var nom = document.getElementById("nom").value;
+  var prenom = document.getElementById("prenom").value;
+  var ville = document.getElementById("ville").value;
+
+
+  alert ("Bonjour, "+prenom);
+}
+  </script>
 <form>
     <label for="nom">Nom : </label>
     <input type="text" name="nom" id="nom" value=""/>
@@ -12,7 +22,7 @@
     <input type="text" name="prenom" id="prenom" value=""/>
     <label for="ville">Ville : </label>
     <input type="text" name="ville" id="ville"  value=""/>
-    <button  name="valider" id="valider">Valider</button>
+    <button  name="valider" id="valider" onclick="maFonction()">Valider</button>
 </form>
 </body>
 </html>
