@@ -5,12 +5,19 @@
         <meta charset="UTF-8">
     </head>
     <body>
+      <script type="text/javascript">
+      function maFonction() {
+      var resultat = (Math.trunc(document.getElementById("premier_nombre").value)) * (document.getElementById("deuxieme_nombre").value);
+      alert(resultat);
+    }
+
+      </script>
         <form>
             <label for="premier_nombre">Premier nombre : </label>
             <input type="text" id="premier_nombre" name="premier_nombre" value=""/>
             <label for="deuxieme_nombre">Deuxième nombre : </label>
             <input type="text" id="deuxieme_nombre" name="deuxieme_nombre" value=""/>
-            <button id="valider" name ="valider">Valider</button>
+            <button id="valider" name ="valider" onclick ="maFonction()">Valider</button>
         </form>
     </body>
 </html>
