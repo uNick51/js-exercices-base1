@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Exercice_7</title>
+        <title>Exercice_6</title>
         <meta charset="UTF-8">
     </head>
     <body>
+
+      <!-- <script type="text/javascript">
+
+        var a = prompt("quel est ton age?");
+        function majorite(a) {
+          if ((a>=0)&&(a<=17)){
+            return "Vous êtes mineur ";}
+             else if (a>=18){
+            return "Vous êtes majeur";}
+             else {
+            return "il y a une erreur de saisie";}
+        }
+        alert (majorite(a));
+
+      </script> -->
+
+      <form>
+          <label for="ag">Quel est ton age?</label>
+          <input type="text" id="ag" name="ag" value=""/>
+          <button id="valider" name ="valider" onclick ="majorite(a)">Valider</button>
+      </form>
+
+      <script type="text/javascript">
+      var a = document.getElementById("ag").value;
+      function majorite(a) {
+        if ((a>=0)&&(a<=17)){
+          return "mineur";}
+          // alert("Vous êtes mineur");}
+           else if (a>=18){
+             return "majeur";}
+          // alert("Vous êtes majeur");}
+           else {
+          // alert("il y a une erreur de saisie");}
+            return "erreur";}
+          alert (majorite(a));
+      }
+      </script>
+
+
 
     <body>
 </html>
