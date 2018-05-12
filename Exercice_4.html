@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Exercice_4</title>
-        <meta charset="UTF-8">
-    </head>
-    <body>
-      <script type="text/javascript">
-        var nom = prompt ("Quel est ton Nom ?")
-        var prenom = prompt ("Quel est ton Prenom ?")
-        var ville = prompt ("Quel est ta Ville ?")
+  <head>
+    <title>Exercice_4</title>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+
+    <form>
+      <label for="nom">Quel est ton nom ?</label>
+      <input type="text" id="nom" name="nom" value="" />
+      <label for="prenom">Quel est ton prenom ?</label>
+      <input type="text" id="prenom" name="prenom" value="" />
+      <label for="ville">Quel est ta ville ?</label>
+      <input type="text" id="ville" name="ville" value="" />
+      <button id="valider" name="valider" onclick="maFonction()">Valider</button>
+    </form>
+
+    <script type="text/javascript">
+      function maFonction(){
+        var nom = document.getElementById("nom").value;
+        var prenom = document.getElementById("prenom").value;
+        var ville = document.getElementById("ville").value;
         alert (nom+"\n"+prenom+"\n"+ville);
-      </script>
-    </body>
+      }
+    </script>
+  </body>
 </html>
