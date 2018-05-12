@@ -6,44 +6,28 @@
     </head>
     <body>
 
-      <!-- <script type="text/javascript">
-
-        var a = prompt("quel est ton age?");
-        function majorite(a) {
-          if ((a>=0)&&(a<=17)){
-            return "Vous êtes mineur ";}
-             else if (a>=18){
-            return "Vous êtes majeur";}
-             else {
-            return "il y a une erreur de saisie";}
-        }
-        alert (majorite(a));
-
-      </script> -->
-
       <form>
-          <label for="ag">Quel est ton age?</label>
-          <input type="text" id="ag" name="ag" value=""/>
-          <button id="valider" name ="valider" onclick ="majorite(a)">Valider</button>
+        <label for="ag">Quel est ton age ?</label>
+        <input type="text" id="ag" name="ag" value="">
+        <button id="valider" name="valider" onclick="maFonction()">Valider</button>
       </form>
 
       <script type="text/javascript">
-      var a = document.getElementById("ag").value;
-      function majorite(a) {
-        if ((a>=0)&&(a<=17)){
-          return "mineur";}
-          // alert("Vous êtes mineur");}
-           else if (a>=18){
-             return "majeur";}
-          // alert("Vous êtes majeur");}
-           else {
-          // alert("il y a une erreur de saisie");}
-            return "erreur";}
-          alert (majorite(a));
-      }
+        function maFonction(a){
+          var a = document.getElementById("ag").value;
+          var b = (18)-(document.getElementById("ag").value);
+            if ((a>=0)&&(a<=16)) {
+              alert("Vous êtes mineur, revenez dans "+b+" ans");
+            } else if ((a>16)&&(a<18)) {
+              alert("Vous êtes mineur, revenez dans "+b+" an");
+            }
+             else if (a>=18) {
+              alert("Vous êtes majeur, Bienvenue");
+            } else {
+              alert("Erreur de saisie")
+            }
+        }
+
       </script>
-
-
-
     <body>
 </html>
